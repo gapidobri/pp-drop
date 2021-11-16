@@ -6,6 +6,7 @@ const uploadButtonElement = document.getElementById('upload-button');
 const filenameElement = document.getElementById('filename');
 const countElement = document.getElementById('count');
 const copiedElement = document.getElementById('copied');
+const hintElement = document.getElementById('hint');
 
 let uploaded = false,
   downloadCount = 0;
@@ -33,6 +34,7 @@ fileElement.addEventListener('change', (event) => {
   const file = event.currentTarget.files[0];
 
   filenameElement.innerText = file.name;
+  hintElement.hidden = false;
 });
 
 peer.on('open', (id) => {

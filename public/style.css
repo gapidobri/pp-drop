@@ -79,6 +79,14 @@ body {
   transition-duration: 300ms;
 }
 
+#hint {
+  position: absolute;
+  top: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+  text-align: center;
+}
+
 a,
 input {
   color: #fff;
