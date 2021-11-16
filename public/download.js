@@ -40,10 +40,5 @@ peer.on('open', (id) => {
     document.body.removeChild(link);
     delete link;
 
-    setTimeout(() => {
-      window.close();
-    }, 300);
-
-
   });
 });
