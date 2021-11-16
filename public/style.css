@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Shippori+Antique+B1&display=swap');
+
+body {
+  background: linear-gradient(270deg, #12c2e9, #c471ed, #f64f59);
+  background-size: 600% 600%;
+
+  -webkit-animation: BackgroundGradient 29s ease infinite;
+  -moz-animation: BackgroundGradient 29s ease infinite;
+  animation: BackgroundGradient 29s ease infinite;
+
+  font-family: 'Shippori Antique B1', sans-serif;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  flex-direction: column;
+
+  margin: 0;
+
+  width: 100%;
+  height: 100vh;
+
+  color: white;
+}
+
+.state-before-upload {
+  width: 300px;
+  padding: 50px;
+}
+
+.state-after-upload {
+  padding: 10px;
+}
+
+.button {
+  color: white;
+
+  border-radius: 20px;
+  box-shadow: 5px 5px 0px rgba(0, 0, 0, 0.1);
+
+  transition-duration: 100ms;
+
+  display: flex;
+  justify-content: center;
+
+  cursor: pointer;
+}
+
+.button:hover {
+  box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.1);
+  transform: translate(5px, 5px);
+}
+
+.upload-icon {
+  color: white;
+}
+
+.frosted {
+  background-color: rgba(255, 255, 255, 0.15);
+}
+
+#title {
+  color: #fff;
+  text-align: center;
+}
+
+#url {
+  position: absolute;
+  bottom: 10px;
+  font-size: 10px;
+
+  color: rgba(255, 255, 255, 0.75);
+}
+
+#copied {
+  opacity: 0;
+  color: white;
+  transition-duration: 300ms;
+}
+
+a,
+input {
+  color: #fff;
+}
+
+@media only screen and (max-width: 600px) {
+  #title {
+    font-size: 1.5em;
+  }
+
+  .button {
+    width: 50%;
+  }
+}
+
+@-webkit-keyframes BackgroundGradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+@-moz-keyframes BackgroundGradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+@keyframes BackgroundGradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}

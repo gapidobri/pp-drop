@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PP Drop</title>
+
+    <script src="https://unpkg.com/peerjs@1.3.1/dist/peerjs.min.js"></script>
+    <script
+      src="https://kit.fontawesome.com/707e3a1f03.js"
+      crossorigin="anonymous"
+    ></script>
+    <script defer src="upload.js"></script>
+  </head>
+  <link rel="stylesheet" href="style.css" />
+  <body>
+    <h1 id="title">Peer-to-Peer File Drop</h1>
+
+    <div id="upload-button" class="button frosted state-before-upload">
+      <i class="fas fa-upload fa-4x upload-icon"></i>
+    </div>
+
+    <p id="filename"></p>
+    <p id="count"></p>
+
+    <p id="copied">Copied!</p>
+
+    <input type="file" name="upload" id="upload-file" hidden />
+
+    <a href="#" id="url" target="_blank" hidden></a>
+  </body>
+</html>
