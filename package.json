@@ -1,7 +1,7 @@
 {
   "name": "pp-drop",
   "version": "1.0.0",
-  "description": "",
+  "description": "Peer-To-Peer File Drop",
   "main": "index.js",
   "scripts": {
     "start": "ts-node src/app.ts",
