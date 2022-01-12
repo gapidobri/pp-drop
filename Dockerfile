@@ -5,7 +5,7 @@ WORKDIR /app
 COPY package*.json ./
 COPY tsconfig.json ./
 
-COPY src /app/src
+COPY ./ ./
 
 RUN npm i
 
