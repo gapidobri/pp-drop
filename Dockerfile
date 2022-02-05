@@ -7,7 +7,7 @@ COPY tsconfig.json ./
 
 COPY ./ ./
 
-RUN npm i
+RUN npm i -timeout=600000
 
 EXPOSE 3000
 
