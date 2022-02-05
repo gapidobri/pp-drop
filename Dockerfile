@@ -1,4 +1,4 @@
-FROM node:latest
+FROM arm64v8/node:latest
 
 WORKDIR /app
 
@@ -7,7 +7,7 @@ COPY tsconfig.json ./
 
 COPY ./ ./
 
-RUN npm i -timeout=600000
+RUN npm i
 
 EXPOSE 3000
 
